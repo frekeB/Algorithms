@@ -1,0 +1,109 @@
+//const numbers = [2,3,4,57];
+
+const people =[
+    {
+        name: "Dom",
+        age: 35,
+        occupation:"Web Developer"
+    },
+    {
+        name: "Amy",
+        age: 26,
+        occupation:"Nurse"
+    },
+    {
+        name: "Bruce",
+        age: 55,
+        occupation:"Electrician"
+    }
+];
+
+const names = people.map(person => {
+    return person.name;
+})
+console.log(names)
+
+const occupations = people.map(people =>{
+    return people.occupation;
+});
+
+console.log(occupations)
+
+const ages = people.map(people =>{
+    return people.age;
+
+}).sort((a,b) =>(a-b))
+console.log(ages)
+
+///filter
+const overThirties = people.filter(people =>people.age <= 39
+).map(people => people.name);
+
+console.log(overThirties)
+
+///reduce
+const totalAge =people.reduce((total, person) =>total +person.age
+, 0);
+
+console.log(totalAge);
+
+
+
+
+const arr=[5,1,3,2,6]
+
+const doubleArr = arr.map(arr => arr*2);
+
+console.log(doubleArr);
+
+const TripleArr = arr.map(arr =>arr*3);
+
+console.log(TripleArr);
+
+const BinaryArr = arr.map(arr => + arr.toString(2))
+
+console.log(BinaryArr);
+
+//filter odd value
+const oddNumbers = arr.filter(arr => arr%2)
+console.log(oddNumbers);
+
+const evenNumbers = arr.filter(arr =>  arr%2 ===0)
+
+const greaterThan4 = arr.filter(arr => arr > 4)
+console.log(greaterThan4);
+
+
+//reduce
+const findsum = arr.reduce(function(acc, curr) {
+    acc = acc + curr;
+    return acc;
+}, 0);
+
+const users =[
+    {firstName: "akshay",lastName:"saint",age: 26},
+    {firstName: "donald",lastName:"trump",age: 75},
+    {firstName: "elon",lastName:"musk",age: 50},
+    {firstName: "deepika",lastName:"padukone",age: 26},
+]
+const userNames = users.map(users => users.firstName + " " + users.lastName)
+
+const userAge = users.reduce(function(acc, curr){
+    if(acc[curr.age]){
+        acc[curr.age] = ++ acc[curr.age]
+    }else{
+        acc[curr.age] = 1
+    }
+    return acc;
+}, {})
+
+console.log(userAge)
+
+// first name of people whose age is less than 50
+console.log
+
+
+
+
+
+    
