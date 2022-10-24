@@ -18,3 +18,4 @@ Attention: If the number has leading zeros the amount of digits should be consid
 
 
 
+# Algorithms

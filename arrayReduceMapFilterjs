@@ -102,7 +102,14 @@ console.log(userAge)
 // first name of people whose age is less than 50
 console.log
 
+//convert to binary
+// let x = 101010.101010;
+// parseInt(x, 2);
+let binary = 1101
+const digit = parseInt(binary,2)
 
+
+console.log(digit)
 
 
 
